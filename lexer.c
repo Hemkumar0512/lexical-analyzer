@@ -707,3 +707,12 @@ int isConstant(const char* str)
 
     return isFloat ? 2 : 1;
 }
+
+void closeLexer(void)
+{
+    if (fptr != NULL)
+    {
+        fclose(fptr);
+        fptr = NULL;
+    }
+}

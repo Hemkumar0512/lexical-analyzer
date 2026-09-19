@@ -31,6 +31,7 @@ typedef struct {
 } Token;
 
 void initializeLexer(const char* filename);
+void closeLexer(void);
 Token getNextToken(void);
 void categorizeToken(Token* token);
 int isKeyword(const char* str);

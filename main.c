@@ -49,7 +49,8 @@ int main(int argc, char *argv[])
 
         printf("%-13s: %s\n", typeName(token.type), token.lexeme);
     }
-
+    
+    closeLexer();
     printf("\nParsing  : %s : Done\n", argv[1]);
     return 0;
 }
